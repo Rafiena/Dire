@@ -1,4 +1,5 @@
 steps:
+build: {{GITHUB_TOKEN}};
 - uses: actions/checkout@v2
 
 - uses: actions/download-artifact@v3
@@ -7,3 +8,4 @@ steps:
     
 - name: Display structure of downloaded files
   run: ls -R
+  
